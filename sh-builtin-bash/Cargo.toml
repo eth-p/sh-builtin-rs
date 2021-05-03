@@ -1,0 +1,24 @@
+[package]
+name = "sh-builtin-bash"
+version = "0.1.0"
+authors = ["eth-p <eth-p+git@hidden.email>"]
+description = "Procedural macro and bindings for creating bash builtins"
+keywords = ["bash-builtins", "proc_macro", "procmacro"]
+license = "MIT/Apache-2.0"
+edition = "2018"
+homepage = "https://github.com/eth-p/sh-builtin-rs"
+repository = "https://github.com/eth-p/sh-builtin-rs"
+
+[dependencies.sh-builtin-bash-bindings]
+path = "crates/sh-builtin-bash-bindings"
+
+[dependencies.sh-builtin-bash-proc]
+path = "crates/sh-builtin-bash-proc"
+
+[[example]]
+name = "true"
+crate-type = ["cdylib"]
+
+[[example]]
+name = "echo"
+crate-type = ["cdylib"]

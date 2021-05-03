@@ -1,0 +1,21 @@
+[package]
+name = "sh-builtin-bash-proc"
+version = "0.1.0"
+authors = ["eth-p <eth-p+git@hidden.email>"]
+description = "Procedural macros for sh-builtin-bash (part of sh-builtin-bash)"
+keywords = []
+license = "MIT/Apache-2.0"
+edition = "2018"
+homepage = "https://github.com/eth-p/sh-builtin-rs"
+repository = "https://github.com/eth-p/sh-builtin-rs"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+proc-macro2 = "1.0"
+syn = { version = "1.0", features = ["full", "parsing", "extra-traits"] }
+
+[dependencies.sh-builtin-common-util]
+path = "../../../crates/sh-builtin-common-util"

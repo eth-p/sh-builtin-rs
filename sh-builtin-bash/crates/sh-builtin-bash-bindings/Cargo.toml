@@ -1,0 +1,13 @@
+[package]
+name = "sh-builtin-bash-bindings"
+version = "0.1.0"
+authors = ["eth-p <eth-p+git@hidden.email>"]
+description = "Bindings for the 'bash-builtins' package (part of sh-builtin)"
+keywords = []
+license = "MIT/Apache-2.0"
+edition = "2018"
+homepage = "https://github.com/eth-p/sh-builtin-rs"
+repository = "https://github.com/eth-p/sh-builtin-rs"
+
+[build-dependencies]
+bindgen = "0.53.1"
