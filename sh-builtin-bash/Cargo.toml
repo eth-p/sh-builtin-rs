@@ -11,9 +11,11 @@ repository = "https://github.com/eth-p/sh-builtin-rs"
 
 [dependencies.sh-builtin-bash-bindings]
 path = "crates/sh-builtin-bash-bindings"
+version = "0.1.0"
 
 [dependencies.sh-builtin-bash-proc]
 path = "crates/sh-builtin-bash-proc"
+version = "0.1.0"
 
 [[example]]
 name = "true"
